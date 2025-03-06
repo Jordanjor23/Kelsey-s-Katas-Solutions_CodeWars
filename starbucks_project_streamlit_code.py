@@ -70,12 +70,12 @@ if page == "Home":
 
     # Dataset Display
 import pandas as pd
-starbucks = pd.read_csv('/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('/Copy of Copy of cleaned_starbucks.csv')
 
 # Access data in the DataFrame using column names or indexing
 print(starbucks['column_name'])
 print(starbucks.iloc[0])  # Access first row
-starbucks = pd.read_csv('/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('/Copy of cleaned_starbucks.csv')
 st.subheader("Quick Glance at the Data")
 if st.checkbox("Show DataFrame"):
         st.dataframe(starbucks)
@@ -87,7 +87,7 @@ if st.checkbox("Show DataFrame"):
 
   ##info
 import pandas as pd
-starbucks = pd.read_csv('/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('/Copy of cleaned_starbucks.csv')
 starbucks.info()
 
 # Create a sample DataFrame
@@ -98,7 +98,7 @@ st.title("Starbucks Dataset: Info")
 
 # About the Dataset
 
-starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('/Copy of cleaned_starbucks.csv')
 st.write("The following dataframe illustrates the different Columns, Non-Null Count, and Dtypes for the data set. This information is very useful when exploring the data set. The 'info' view alows the data analyst to see the different types of columns and data types that can be utilized for the analysis.")
 st.dataframe(starbucks)
 starbucks.head()
@@ -108,7 +108,7 @@ starbucks.head()
 st.title("Starbucks Dataset: Describe")
 st.write("The following dataframe illustrates the description of the dataset. The attribute '.describe' is used with libraries like Pandas to display relevant information about the rows and columns in the dataset.")
 
-starbucks_data = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks_data = pd.read_csv('/Copy of cleaned_starbucks.csv')
 
 # Display the Description of the Dataset
 st.title("Starbucks Dataset: Describe")
@@ -117,7 +117,7 @@ st.dataframe(starbucks_data.describe())
 
 import pandas as pd
 
-starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('/Copy of cleaned_starbucks.csv')
 
 import streamlit as st
 
@@ -150,12 +150,11 @@ starbucks.head()
 
 import pandas as pd
 import streamlit as st
-starbucks_data = ('https://github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks_data = ('/Copy of cleaned_starbucks.csv')
 
 # Display the descriptive statistics
 st.title("Starbucks Dataset: Describe")
 st.write("The following dataframe illustrates the description of the dataset. The attribute '.describe' is used with libraries like Pandas to display relevant information about the rows and columns in the dataset.")
 st.dataframe(starbucks_data.describe())
-
 
 
