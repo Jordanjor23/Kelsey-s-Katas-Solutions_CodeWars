@@ -6,7 +6,8 @@
 """
 
 # Home Page
-if page == "Home":
+page = "Home ⭐"
+if page == "Home ⭐":
     st.title("📊 Starbucks Data Analysis Project")
     st.subheader("Welcome to my Starbucks Data Analysis Project app!")
     st.write("""
@@ -16,20 +17,21 @@ if page == "Home":
     """)
     st.image('https://images.app.goo.gl/GGNuLB4K1p2w8Laz6', caption="Starbucks Drinks")
 
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
 # Set page title and icon
-st.set_page_config(page_title="Home", page_icon="🌸")
+st.set_page_config(page_title="Home ⭐", page_icon="🌸")
 
 import streamlit as st
 
 # Sidebar for navigation
-page = st.sidebar.selectbox("Select a Page", ["Home", "Overview of the Data", "EDA", "Data Visualizations","Final Thoughts"])
+page = st.sidebar.selectbox("Select a Page", ["Home ⭐", "Overview of the Data", "EDA", "Data Visualizations","Final Thoughts"])
 
 # Display different pages based on selection
-if page == "Home":
+if page == "Home ⭐":
     st.title("Welcome to the Home Page")
     st.write("Welcome to the Home Page of my steamlit. The focus of this app is to complete a data analysis of a Starbucks dataset that covers nutritional information. Enjoy!")
 
@@ -53,7 +55,7 @@ elif page == "Final Thoughts":
 """## Overview of the Data 📊"""
 
 # Data Overview
-if page == "Home":
+if page == "Home ⭐":
     st.title("Welcome to the Homepage")
 elif page == "Overview of the Data":
     st.title("🔢 Overview of the Data")
@@ -69,7 +71,7 @@ elif page == "Overview of the Data":
 
     # Dataset Display
 
-    starbucks = pd.read_csv('/gdrive/MyDrive/M8-Mini-Project-Starbucks-EDA/data/Copy of cleaned_starbucks.csv')
+    starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
     st.subheader("Quick Glance at the Data")
     if st.checkbox("Show DataFrame"):
         st.dataframe(starbucks)
@@ -98,7 +100,7 @@ starbucks.head()
 st.title("Starbucks Dataset: Describe")
 st.write("The following dataframe illustrates the description of the dataset. The attribute '.describe' is used with libraries like Pandas to display relevant information about the rows and columns in the dataset.")
 
-starbucks_data = pd.read_csv('/gdrive/MyDrive/M8-Mini-Project-Starbucks-EDA/data/Copy of cleaned_starbucks.csv')
+starbucks_data = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
 
 # Display the Description of the Dataset
 st.title("Starbucks Dataset: Describe")
@@ -107,7 +109,7 @@ st.dataframe(starbucks_data.describe())
 
 import pandas as pd
 
-starbucks = pd.read_csv('/gdrive/MyDrive/M8-Mini-Project-Starbucks-EDA/data/Copy of cleaned_starbucks.csv')
+starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
 
 import streamlit as st
 
@@ -140,7 +142,7 @@ starbucks.head()
 
 import pandas as pd
 import streamlit as st
-starbucks_data = pd.read_csv('/gdrive/MyDrive/M8-Mini-Project-Starbucks-EDA/data/Copy of cleaned_starbucks.csv')
+starbucks_data = pd.read_csv('https://github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
 
 # Display the descriptive statistics
 st.title("Starbucks Dataset: Describe")
@@ -153,4 +155,6 @@ st.dataframe(starbucks_data.describe())
 
 ## Final Thoughts 📊
 """
+
+
 
