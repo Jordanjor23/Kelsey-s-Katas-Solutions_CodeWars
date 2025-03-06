@@ -1,6 +1,6 @@
 
 
-"""## Homepage ⭐
+"""## Homepage 
 
 
 """
@@ -11,8 +11,8 @@ import pandas as pd
 import streamlit as st
 
 # Home Page
-page = "Home ⭐"
-if page == "Home ⭐":
+page = "Home"
+if page == "Home":
     st.title("📊 Starbucks Data Analysis Project")
     st.subheader("Welcome to my Starbucks Data Analysis Project app!")
     st.write("""
@@ -30,14 +30,14 @@ import pandas as pd
 import streamlit as st
 
 # Set page title and icon
-st.set_page_config(page_title="Home ⭐", page_icon="🌸")
+st.set_page_config(page_title="Home", page_icon="🌸")
 
 
 # Sidebar for navigation
-page = st.sidebar.selectbox("Select a Page", ["Home ⭐", "Overview of the Data", "EDA", "Data Visualizations","Final Thoughts"])
+page = st.sidebar.selectbox("Select a Page", ["Home", "Overview of the Data", "EDA", "Data Visualizations","Final Thoughts"])
 
 # Display different pages based on selection
-if page == "Home ⭐":
+if page == "Home":
     st.title("Welcome to the Home Page")
     st.write("Welcome to the Home Page of my steamlit. The focus of this app is to complete a data analysis of a Starbucks dataset that covers nutritional information. Enjoy!")
 
@@ -61,7 +61,7 @@ elif page == "Final Thoughts":
 """## Overview of the Data 📊"""
 
 # Data Overview
-if page == "Home ⭐":
+if page == "Home":
     st.title("Welcome to the Homepage")
 elif page == "Overview of the Data":
     st.title("🔢 Overview of the Data")
@@ -69,9 +69,9 @@ elif page == "Overview of the Data":
 
     st.subheader("About the Data")
     st.write("""
-        The Starbucks dataset provides nuturiontal information about the famous Starbucks menu.
+        The Starbucks dataset provides nutritional information about the famous Starbucks menu.
         It contains 240 rows of Starbucks menu items ranging from (Frappuccino® Blended Coffee, Tazo® Tea Drinks, and  Classic Espresso Drinks).
-        For each drink on the menu, the dataset includes nutritional information like calories, vitamin count, and cafeine level.
+        The dataset for each drink on the menu includes nutritional information like calories, vitamin count, and caffeine level.
     """)
     st.image('https://images.app.goo.gl/GGNuLB4K1p2w8Laz6', caption="Starbucks Drinks")
 
