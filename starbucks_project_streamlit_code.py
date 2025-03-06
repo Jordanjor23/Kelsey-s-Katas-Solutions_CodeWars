@@ -22,10 +22,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+import streamlit as st
+
 # Set page title and icon
 st.set_page_config(page_title="Home ⭐", page_icon="🌸")
 
-import streamlit as st
 
 # Sidebar for navigation
 page = st.sidebar.selectbox("Select a Page", ["Home ⭐", "Overview of the Data", "EDA", "Data Visualizations","Final Thoughts"])
@@ -155,6 +156,8 @@ st.dataframe(starbucks_data.describe())
 
 ## Final Thoughts 📊
 """
+
+
 
 
 
