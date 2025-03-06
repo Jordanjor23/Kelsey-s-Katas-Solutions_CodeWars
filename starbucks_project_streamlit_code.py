@@ -32,7 +32,7 @@ import streamlit as st
 
 
 # Sidebar for navigation
-page = st.sidebar.selectbox("Select a Page", ["Home", page_icon=="🌸", "Overview of the Data", "EDA", "Data Visualizations", "Final Thoughts"])
+page = st.sidebar.selectbox("Select a Page", ["Home", "Overview of the Data", "EDA", "Data Visualizations", "Final Thoughts"])
 
 # Display different pages based on selection
 if page == "Home":
