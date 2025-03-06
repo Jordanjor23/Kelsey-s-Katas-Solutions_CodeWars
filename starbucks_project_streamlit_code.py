@@ -1,5 +1,3 @@
-
-
 """## Homepage 
 
 
@@ -86,7 +84,7 @@ elif page == "Overview of the Data":
         st.write(f"The dataset contains {starbucks.shape[240]} rows and {starbucks.shape[18]} columns.")
 
   ##info
-  starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
 starbucks.info()
 
 # Create a sample DataFrame
@@ -97,7 +95,7 @@ st.title("Starbucks Dataset: Info")
 
 # About the Dataset
 
-  starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
+starbucks = pd.read_csv('github.com/Jordanjor23/Kelsey-s-Katas-Solutions_CodeWars/blob/main/Copy%20of%20cleaned_starbucks.csv')
 st.write("The following dataframe illustrates the different Columns, Non-Null Count, and Dtypes for the data set. This information is very useful when exploring the data set. The 'info' view alows the data analyst to see the different types of columns and data types that can be utilized for the analysis.")
 st.dataframe(starbucks)
 starbucks.head()
@@ -161,7 +159,6 @@ st.dataframe(starbucks_data.describe())
 ## Data Visualizations 📊
 
 ## Final Thoughts 📊
-"""
 
 
 
