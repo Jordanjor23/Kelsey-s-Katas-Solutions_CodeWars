@@ -17,7 +17,7 @@ if page == "Home":
     st.subheader("Welcome to my Starbucks Data Analysis Project app!")
     st.write("""
         This app provides an interactive platform to explore the Starbucks dataset.
-        You can visualize the distribution of data, explore relationships between different columns and rows in the dataset, and even learn nutritional facts about the
+        You can visualize the data distribution, explore relationships between different columns and rows in the dataset, and even learn nutritional facts about the
         delicious Starbucks menu.
     """)
     st.image('https://images.app.goo.gl/GGNuLB4K1p2w8Laz6', caption="Starbucks Drinks")
@@ -29,12 +29,10 @@ import pandas as pd
 
 import streamlit as st
 
-# Set page title and icon
-st.set_page_config(page_title="Home", page_icon="🌸")
 
 
 # Sidebar for navigation
-page = st.sidebar.selectbox("Select a Page", ["Home", "Overview of the Data", "EDA", "Data Visualizations","Final Thoughts"])
+page = st.sidebar.selectbox("Select a Page", ["Home", page_icon="🌸", "Overview of the Data", "EDA", "Data Visualizations", "Final Thoughts"])
 
 # Display different pages based on selection
 if page == "Home":
