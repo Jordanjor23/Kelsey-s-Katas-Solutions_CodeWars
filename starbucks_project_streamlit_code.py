@@ -154,7 +154,7 @@ st.title("Starbucks Dataset: Describe")
 st.write("The following dataframe illustrates the description of the dataset. The attribute '.describe' is used with libraries like Pandas to display relevant information about the rows and columns in the dataset.")
 st.dataframe(starbucks_data.describe())
 
-"""## Exploratory Data Analysis (EDA) 📊
+## Exploratory Data Analysis (EDA) 📊
 
 ## Data Visualizations 📊
 
