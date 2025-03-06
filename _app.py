@@ -10,7 +10,7 @@ st.write("Welcome to my first streamlit app")
 number = st.slider("Pick a number", 1, 10)
 
 #Display the result
-st.writer(f"You selected: {number}")
+st.write(f"You selected: {number}")
 
 
 
