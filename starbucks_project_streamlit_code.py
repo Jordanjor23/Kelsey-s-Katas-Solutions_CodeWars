@@ -121,7 +121,8 @@ import pandas as pd
 
 starbucks = pd.read_csv('/gdrive/MyDrive/M8-Mini-Project-Starbucks-EDA/data/Copy of cleaned_starbucks.csv')
 
-!pip install streamlit
+pip install streamlit
+
 
 import streamlit as st
 
